@@ -1,0 +1,225 @@
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background: transparent !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-item a {
+    position: relative;
+    text-decoration: none;
+
+    transition: all 0.5s ease;
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 0;
+    height: 2px;
+    background: white;
+
+    transition: width 0.3s ease;
+
+}
+
+.nav-item a:hover::after {
+    width: 60%;
+    color: black;
+}
+
+.btn1 {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn2 {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    transition: all 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.service-box {
+    background: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.service-box:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-box:hover .icon-box {
+    background: #000;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+
+.nav-link {
+  color: #000;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.portfolio-box {
+  position: relative;
+}
+
+.portfolio-box img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-box:hover .overlay {
+  opacity: 1;
+}
+
+.overlay i {
+  color: #fff;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.overlay i:hover {
+  transform: scale(1.2);
+  color: #ddd;
+}
+
+
+#work i {
+  color: #343a40;
+  transition: color 0.3s ease;
+}
+
+#work i:hover {
+  color: #000;
+}
+
+#work h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#blog .card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+#blog .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+#blog .card img {
+  transition: transform 0.5s ease;
+}
+
+#blog .card:hover img {
+  transform: scale(1.05);
+}
+
+#blog .card-body h5 {
+  transition: color 0.3s ease;
+}
+
+#blog .card-body h5:hover {
+  color: #000;
+}
+
+
+
+#contact i {
+  color: #343a40;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#contact i:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+#contact form .form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+#contact form .form-control:focus {
+  border-color: #000;
+}
+
+#contact button {
+  background: #000;
+  color: #fff;
+  border-radius: 0;
+  padding: 10px 25px;
+  transition: background 0.3s ease;
+}
+
+#contact button:hover {
+  background: #333;
+}
