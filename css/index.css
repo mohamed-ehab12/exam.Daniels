@@ -38,6 +38,17 @@
     width: 60%;
     color: black;
 }
+.hero-im ::after{
+  content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -2;
+}
 
 .btn1 {
     background-color: #000;
@@ -50,6 +61,8 @@
     background-color: #fff;
     color: #000;
 }
+
+ 
 
 .btn2 {
     background-color: #fff;
